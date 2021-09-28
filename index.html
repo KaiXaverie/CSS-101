@@ -16,6 +16,18 @@
         p {
             background-color: darkmagenta;
         }
+        .grey {
+            color: grey;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        #title {
+            text-decoration: underline;
+        }
+        #italic-text {
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -27,5 +39,11 @@
     <strong>
         This is bolded text
     </strong>
+    <!--Class selector named grey, we separate class selectors with space-->
+    <h3 class="grey uppercase" id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta consectetur animi velit aliquam atque deleniti, debitis iure facere nemo sapiente tempora iusto. Nam maiores debitis sequi fugiat reiciendis dignissimos.</h3>
+    <div class="grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus velit quod soluta provident officia explicabo est. Est maiores doloribus eaque assumenda repudiandae, tempora harum voluptas eligendi nihil dolore atque soluta?</div>
+    <!--Id should be unique, which means that we should apply one ID to only one element, js will catch only the first one and that may cause an issue later on-->
+    <h3 class="uppercase" id="italic-text">Don't select me</h3>
+    <a href="selection.html">Second page</a>
 </body>
 </html>
