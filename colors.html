@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <style>
+        /*We can use named, hex and rgb/rgba colors*/
+        h1 {
+            color: #fff00f;
+            background-color: rgb(125, 125, 125);
+        }
+        p {
+            /*Red green blue, alpha - opacity*/
+            color: rgba(0, 0, 0, 0.5);
+        }
+        div {
+            background-image: url("images/backgroundimg.jpg");
+            /*background-size, cover takes up entire spacing of the element, in this case body*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*contain will take up whole height of the element*/
+            height: 200px;
+            /*Centered at the x-axis and y-axis*/
+            background-position: center center;
+        }
+        a {
+            color: rgb(50, 100, 50);
+        }
+        /*We can modify link states*/
+        a:hover {
+            color: yellow;
+        }
+        a:active {
+            color:rgb(196, 206, 110);
+        }
+        a:visited {
+            color:salmon;
+        }
+        h2.small {
+            /*There are different measurement types, pixel, rem, em*/
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with different color types</h1>
+    <p>This is transparent</p>
+    Changing <a href="selection.html">link</a> color
+    <h2 class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nostrum hic pariatur impedit suscipit sequi vel ad voluptatem quia modi laborum error at est atque voluptas odit, quas qui temporibus.</h2>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae delectus libero sed dolorum rem aperiam quam molestiae eveniet officia accusamus, culpa temporibus eos enim quasi fugiat laborum qui sint omnis.</div>
+</body>
+</html>
