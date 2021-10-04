@@ -1,0 +1,40 @@
+body{
+    /* background-image: url(images/backgroundimg.jpg); */
+}
+#box {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed rgb(50, 100, 50);
+    /*Top right bottom left, clockwise direction*/
+    padding: 10px 15px 20px 25px;
+    /*Because it is block element its right margin will take up whole space*/
+    margin: 30px;
+    /*We can make right margin 30px with diplay: inline-block*/
+    display: inline-block;
+    /*If we want to center it we can set margin: auto but it must be block element and we can add to it bottom and top margin*/
+    /*We can type margin: 50px auto 50px auto*/
+}
+#inline {
+    display: inline-block;
+    border: 1px solid black;
+    max-width: 500px;
+}
+#boxy {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    /*If we add alpha or opacity to background-color text will not be see-through*/
+    background-color: rgba(50, 100, 50, 0.5);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    /*Text will also be see through if we add opacity*/
+    /* opacity: 0.5; */
+}
+.floating-image {
+    float: right; 
+    margin:10px; 
+    border: 1px solid black; 
+    box-shadow: 0 0 5px black;
+}
