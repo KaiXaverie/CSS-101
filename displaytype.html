@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 101 :)</title>
+    <style>
+        /*This will change div element from block to inline*/
+        body{
+            background-image: url(images/backgroundimg.jpg);
+        }
+        div {
+            display: inline;
+            border: 1px solid teal;
+            width: 200px; /*This will be ignored due to the display, with 'display: inline' the width, height, margin-top, margin-bottom, and float properties have no effect*/
+            height: 200px;/*We can make it work if we use inline-block*/
+
+        }
+        h2 {
+            /*When we use display: inline-block, width and height will work*/
+            display: inline-block;
+            border: 1px solid blue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--Block element will take up whole space, inline element is not selfish, we can override that with CSS-->
+    <h1>This is a block element</h1> with more text beside it
+    <span>This is an inline element</span> with more text beside it<br>
+    <!--Div is a selfish element and will take up whole space-->
+    <div>
+        This is a block element
+    </div>
+    <div>
+        This is a block element
+    </div>
+    <h2>Header</h2>
+    <h2>Another header</h2><br>
+    <a href="alignment.html">Previous Page</a>
+    <a href="width.html">Width and height</a>
+</body>
+</html>
