@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 101 :D</title>
+    <style>
+        body{
+        }
+        div.half-width{
+            width: 50%;
+            /*Lets add border to see if it takes 50% width*/
+            border: 1px solid rgb(50, 100, 50);
+            display: inline-block;
+            background-color: rgba(50, 100, 50, 0.514);
+        }
+        span.half-width{
+            /*Span is inline element so we have to override it if we want it to take up 250px of space*/
+            width: 250px;
+            border: 1px solid rgb(50, 100, 50);
+            display: inline-block;
+            height: 250px;
+        }        
+        #box {
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            background-image: url(images/backgroundimg.jpg);
+            background-size: cover;
+            border-radius: 0 50% 0 50%;
+            /*x y blur inset color, inset means the box shadow will be on the inside*/
+            box-shadow: 6px 6px 15px inset rgb(50, 100, 50);
+        }
+    </style>
+</head>
+<body>
+    <!--This will take half width-->
+    <div class="half-width">This is half width</div><br>
+    <span class="half-width">This is half width and 250px height</span><br>
+
+    <div id="box"></div><br>
+    <a href="displaytype.html">Previous Page</a>
+    <a href="deco.html">Next Page</a>
+</body>
+</html>
